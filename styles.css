@@ -1,0 +1,171 @@
+:root{
+  --main-bg: #090b1a;
+  --card-bg: #1b1938;
+  --accent: #aa5cdb;
+  --pwhite: #FFFFFFBD;
+  --hwhite: #FFFFFF99;
+  --Inter: 'Inter', sans-serif;
+  --Lexend: 'Lexend Deca', sans-serif;
+}
+
+body{
+  background-color: var(--main-bg);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main{
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  margin: 2rem auto;
+  width: 18rem;
+}
+
+span, .attribution a{
+  color: var(--accent)
+}
+
+  /* Card Header */
+
+
+.container{
+  background-image: url('images/image-header-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  width: 18rem;
+  height: 13.95rem;
+}
+
+.overlay{
+  background-color: var(--accent);
+  border-radius: 15px 15px 0 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  height: 13.20rem;
+  width: 18rem;
+}
+
+
+h1{
+  color: #FFF;
+  font-family: var(--Inter);
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-inline: 2rem;
+}
+
+
+.card-header p{
+  color: var(--pwhite);
+  font-family: var(--Inter);
+  line-height: 1.3;
+  margin-inline: 1rem;
+  text-align: center;
+}
+
+
+/* Card Body */
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  color: var(--hwhite);
+  font-family: var(--Lexend);
+  font-variant: small-caps;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -1.5rem;
+}
+
+.card-body p{
+  color: #FFF;
+  font-family: var(--Inter);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+
+
+/* Footer */
+
+.attribution{
+ color: #FFF;
+ font-size: 15px;
+ font-family: var(--Inter);
+ text-align: center;
+ margin: 0 auto;
+ white-space: pre-line;
+}
+
+.attribution a{
+  text-decoration: none;
+}
+
+
+
+
+/* Desktop Styles */
+@media screen and (min-width: 600px){
+  main{
+    margin: 7rem auto;
+    width: 70rem;
+  }
+
+  .card{
+    width: 35rem;
+    margin: -23.3rem 0 3.15rem .5rem;
+  }
+
+  h1{
+    font-size: 33px;
+  }
+
+  .card-header p{
+    width: 65%;
+  }
+
+  h1,
+  .card-header p{
+    line-height: 1.5;
+    margin-inline: 5rem;
+    text-align: left;
+  }
+
+  .container{
+    background-image: url('images/image-header-desktop.jpg');
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    left: 35rem;
+    width: 50%;
+    height: 25rem;
+    margin-bottom: -13.7rem;
+  }
+
+
+  .overlay{
+    border-radius: 0 15px 15px 0;
+    top:0;
+    width: 100%;
+    height: 25rem;
+  }
+
+  .card-body{
+    flex-direction: row;
+    gap: 3rem;
+    margin: 2rem 5rem;
+    width: 35rem;
+  }
+}
